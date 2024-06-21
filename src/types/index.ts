@@ -23,6 +23,7 @@ export interface NutritionInformation {
 export interface Recipe {
     title: string;
     description: string;
+    image: string;
     preparationTimes: PreparationTimes;
     ingredients: string[];
     instructions: Instruction[];

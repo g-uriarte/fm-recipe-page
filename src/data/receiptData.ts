@@ -2,9 +2,9 @@ import { Recipe } from "../types";
 
 export const RECIPE: Recipe = {
 	title: "Simple Omelette Recipe",
-	description:
-		"An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.",
-	preparationTimes: {
+	description: "An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.",
+	image: '/assets/images/image-omelette.jpeg',
+    preparationTimes: {
 		cooking: "5 minutes",
 		preparation: "5 minutes",
 		total: "Approximately 10 minutes",
