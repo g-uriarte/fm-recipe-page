@@ -25,7 +25,7 @@ export const RECIPE: Recipe = {
         { title: 'Enjoy', description: 'Serve hot, with additional salt and pepper if needed.' }
     ],
     nutritionInformation: {
-        description: '',
+        description: 'The table below shows nutritional values per serving without the additional fillings.',
         nutritionItems: [
             { name: 'Calories', amount: '277kcal' },
             { name: 'Carbs', amount: '0g' },
