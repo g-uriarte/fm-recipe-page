@@ -9,7 +9,7 @@ const ListItem: FC<{ step: Instruction }> = ({
     step
 }) => {
     return (
-        <li className="flex py-0.5 [counter-increment:section] before:text-Dark-Raspberry before:font-semibold before:text-sm before:pl-2 before:[content:counter(section)'.']">
+        <li className="flex py-0.5 [counter-increment:section] before:text-Nutmeg before:font-semibold before:text-sm before:pl-2 before:[content:counter(section)'.']">
             <p className='pl-5 text-sm font-Outfit text-Wenge-Brown'>
                 <span className='mr-2 font-semibold'>{step.title}:</span>
                 {step.description}
