@@ -11,7 +11,7 @@ const ItemListTime: FC<{ name: string, time: string; }> = ({
 
     return (
         <li className='py-0.5 before:content-["•"] before:text-Dark-Raspberry before:items-center before:flex flex'>
-            <p className='pl-5 text-sm font-Outfit text-Wenge-Brown ' >
+            <p className='pl-5 text-sm font-Outfit text-Wenge-Brown' >
                 <span className='font-semibold pr-1'>
                     {name}:
                 </span>
