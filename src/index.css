@@ -19,4 +19,8 @@
 		src: url("/assets/fonts/young-serif/YoungSerif-Regular.ttf") format("TrueType");
 	}
 
+	html {
+		font-family: "Outfit", system-ui, sans-serif;
+	}
+
 }
