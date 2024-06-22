@@ -9,18 +9,10 @@ const ItemListTime: FC<{ name: string, time: string; }> = ({
     name, time
 }) => {
 
-    {/* <li className=' py-0.5' >
-            <p className='inline pl-3'>
-                <span className='font-semibold' >{name}: </span>
-                {time}
-            </p>
-        </li> */}
-
     return (
-
-        <li className='py-0.5 before:content-["•"] flex'>
-            <p className='pl-5' >
-                <span className='font-semibold pr-2'>
+        <li className='py-0.5 before:content-["•"] before:text-Dark-Raspberry before:items-center before:flex flex'>
+            <p className='pl-5 text-sm font-Outfit text-Wenge-Brown ' >
+                <span className='font-semibold pr-1'>
                     {name}:
                 </span>
                 {time}
@@ -33,9 +25,6 @@ export const PreparationTimes: FC<PreparationTimesProps> = ({
     preparationTimes
 }) => {
 
-    {/* Preparation time */ }
-    {/* List 3 items (total, preparation, cooking) [dots] */ }
-
     const items = [
         { name: 'Total', time: preparationTimes.total },
         { name: 'Preparation', time: preparationTimes.preparation },
@@ -43,7 +32,7 @@ export const PreparationTimes: FC<PreparationTimesProps> = ({
     ]
 
     return (
-        <div className='bg-Rose-White p-5 flex flex-col gap-3' >
+        <div className='bg-Rose-White pt-5 px-5 pb-3 flex flex-col gap-2 rounded-md' >
             <p className='text-Dark-Raspberry font-bold text-lg' >Preparation time</p>
             <ul className='marker:text-Dark-Raspberry list-inside list-none' >
                 {items.map(itemTime => (
