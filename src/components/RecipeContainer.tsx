@@ -6,6 +6,7 @@ import { PreparationTimes } from './PreparationTimes'
 import { Ingredients } from './Ingredients'
 import { Instructions } from './Instructions'
 import { Nutrition } from './Nutrition'
+import { Separator } from './Separator'
 
 type RecipeContainerProps = {
     recipe: Recipe
@@ -24,7 +25,9 @@ export const RecipeContainer: FC<RecipeContainerProps> = ({
                 <Details title={recipe.title} description={recipe.description} />
                 <PreparationTimes  preparationTimes={recipe.preparationTimes} />
                 <Ingredients ingredients={recipe.ingredients} />
+                <Separator />
                 <Instructions steps={recipe.instructions} />
+                <Separator />
                 <Nutrition />
             </div>
         </div>
