@@ -1,3 +1,5 @@
+const plugin = require("tailwindcss/plugin");
+
 /** @type {import('tailwindcss').Config} */
 export default {
 	darkMode: "class",
@@ -41,8 +43,12 @@ export default {
 				"80dvw": "80dvw",
 				"90dvw": "90dvw",
 				"100dvw": "100dvw",
-			}
+			},
 		},
 	},
-	plugins: [],
+	plugins: [
+		plugin(function ({ addVariant, e }) {
+			addVariant('last-tr-td', '& tr:last-child td')
+		}),
+	],
 };

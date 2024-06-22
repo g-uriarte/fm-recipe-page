@@ -21,14 +21,14 @@ export const RecipeContainer: FC<RecipeContainerProps> = ({
             <div className=''>
                 <Image alt={recipe.description} src={recipe.image} />
             </div>
-            <div className='p-5 flex flex-col gap-3' >
+            <div className='p-5 flex flex-col gap-5' >
                 <Details title={recipe.title} description={recipe.description} />
                 <PreparationTimes  preparationTimes={recipe.preparationTimes} />
                 <Ingredients ingredients={recipe.ingredients} />
                 <Separator />
                 <Instructions steps={recipe.instructions} />
                 <Separator />
-                <Nutrition />
+                <Nutrition nutrition={recipe.nutritionInformation} />
             </div>
         </div>
     )
