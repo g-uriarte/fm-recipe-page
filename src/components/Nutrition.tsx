@@ -11,8 +11,8 @@ const TableRow: FC<{ item: NutritionItem }> = ({
 
     return (
         <tr className='text-sm'>
-            <td className='pl-4 border-b border-b-Light-Grey ' >{item.name}</td>
-            <td className='text-left font-semibold text-Nutmeg border-b border-b-Light-Grey ' >{item.amount}</td>
+            <td className='pl-4 border-b border-b-Light-Grey p-3' >{item.name}</td>
+            <td className='text-left font-semibold text-Nutmeg border-b border-b-Light-Grey p-3' >{item.amount}</td>
         </tr>
     )
 }
