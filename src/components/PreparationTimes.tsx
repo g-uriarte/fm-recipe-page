@@ -32,13 +32,13 @@ export const PreparationTimes: FC<PreparationTimesProps> = ({
     ]
 
     return (
-        <div className='bg-Rose-White pt-5 px-5 pb-3 flex flex-col gap-2 rounded-md' >
+        <section className='bg-Rose-White pt-5 px-5 pb-3 flex flex-col gap-2 rounded-md' >
             <p className='text-Dark-Raspberry font-bold text-lg' >Preparation time</p>
             <ul className='marker:text-Dark-Raspberry list-inside list-none' >
                 {items.map(itemTime => (
                     <ItemListTime key={itemTime.name} name={itemTime.name} time={itemTime.time} />
                 ))}
             </ul>
-        </div>
+        </section>
     )
 }
