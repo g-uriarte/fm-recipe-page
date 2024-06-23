@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { SectionTitle } from './SectionTitle';
+import { Section } from './Section';
 
 type IngredientsProps = {
     ingredients: string[];
@@ -10,7 +11,7 @@ export const Ingredients: FC<IngredientsProps> = ({
 }) => {
 
     return (
-        <section className='flex flex-col gap-3' >
+        <Section>
             <SectionTitle title='Ingredients' />
             <ul className='marker:text-Dark-Raspberry list-inside list-none' >
                 {ingredients.map(ingredient => (
@@ -19,6 +20,6 @@ export const Ingredients: FC<IngredientsProps> = ({
                     </li>
                 ))}
             </ul>
-        </section>
+        </Section>
     )
 }

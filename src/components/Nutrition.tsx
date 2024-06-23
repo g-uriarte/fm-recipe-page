@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import { NutritionInformation, NutritionItem } from '../types'
 import { SectionTitle } from './SectionTitle';
+import { Section } from './Section';
 
 type NutritionProps = {
     nutrition: NutritionInformation;
@@ -23,7 +24,7 @@ export const Nutrition: FC<NutritionProps> = ({
 }) => {
 
     return (
-        <section className='flex flex-col gap-2'>
+        <Section>
             <SectionTitle title='Nutrition' />
             <table className='text-Wenge-Brown table-fixed w-full border-separate border-spacing-y-3'>
                 <caption className='text-left text-sm font-thin mb-3' >{nutrition.description}</caption>
@@ -33,6 +34,6 @@ export const Nutrition: FC<NutritionProps> = ({
                     ))}
                 </tbody>
             </table>
-        </section>
+        </Section>
     )
 }
