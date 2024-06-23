@@ -10,7 +10,7 @@ export const Details: FC<DetailsProps> = ({
 }) => {
     return (
         <div className='flex flex-col gap-3'>
-            <h2 className='font-Young-Serif text-3xl text-Dark-Charcoal ' >{title}</h2>
+            <h1 className='font-Young-Serif text-3xl text-Dark-Charcoal ' >{title}</h1>
             <p className='font-Outfit text-Wenge-Brown'>{description}</p>
         </div>
     )
