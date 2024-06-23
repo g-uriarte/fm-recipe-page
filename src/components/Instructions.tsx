@@ -28,7 +28,7 @@ export const Instructions: FC<InstructionsProps> = ({
             <SectionTitle title='Instructions' />
             <ol className='list-none list-inside'>
                 {steps.map(step => (
-                    <ListItem step={step} />
+                    <ListItem key={step.title} step={step} />
                 ))}
             </ol>
         </Section>

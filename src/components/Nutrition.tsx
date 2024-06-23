@@ -30,7 +30,7 @@ export const Nutrition: FC<NutritionProps> = ({
                 <caption className='text-left text-sm font-thin mb-3' >{nutrition.description}</caption>
                 <tbody className='last-tr-td:border-0'>
                     {nutrition.nutritionItems.map(item => (
-                        <TableRow item={item} />
+                        <TableRow key={item.name} item={item} />
                     ))}
                 </tbody>
             </table>
