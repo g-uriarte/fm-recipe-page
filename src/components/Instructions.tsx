@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { Instruction } from '../types'
+import { SectionTitle } from './SectionTitle'
 
 type InstructionsProps = {
     steps: Instruction[]
@@ -23,7 +24,7 @@ export const Instructions: FC<InstructionsProps> = ({
 }) => {
     return (
         <section className='flex flex-col gap-3'>
-            <h3 className='text-Nutmeg font-Young-Serif text-2xl'>Instructions</h3>
+            <SectionTitle title='Instructions' />
             <ol className='list-none list-inside'>
                 {steps.map(step => (
                     <ListItem step={step} />
