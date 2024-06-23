@@ -18,8 +18,8 @@ export const RecipeContainer: FC<RecipeContainerProps> = ({
 
     return (
         <div className='w-full h-full flex flex-col bg-White xl:w-[650px] xl:rounded-xl xl:px-5 xl:pt-4 xl:pb-2 xl:gap-5 xl:my-20'>
-            <div className='xl:rounded-xl'>
-                <Image alt={recipe.description} src={recipe.image} className='xl:object-cover xl:rounded-xl' />
+            <div className='xl:rounded-lg xl:overflow-hidden'>
+                <Image alt={recipe.description} src={recipe.image} className='xl:object-cover' />
             </div>
             <div className='p-5 flex flex-col gap-5 xl:p-0' >
                 <Details title={recipe.title} description={recipe.description} />
